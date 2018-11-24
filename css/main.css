@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+p
+{
+    color: rgb(66, 62, 62);
+    background: #FFF;
+    text-align: left;
+    margin: 0;
+    font-family: Arial;
+}
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+    margin: 0; 
+    padding: 0; 
+}   
+
+img 
+{ 
+    border: none; /*Remove border if image is a link*/
+    margin: 0; 
+    padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+    font-size: 12px;
+    color: rgb(66, 62, 62);
+}
+
+strong { 
+    font-size: 24px;
+    font-family: "VT323";
+    color: rgb(229, 49, 61);
+    line-height: 1.5;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+    text-decoration:none; 
+    color: rgba(66, 62, 62, 1);  
+}
+
+a:hover, a:active 
+{ 
+    text-decoration:none;
+    color: rgba(66, 62, 62, 1);
+}
+
+/* allows for horizontal nav bars */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+    display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+    background-color: rgba(62, 62, 62, 1);
+    height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+    margin: 0 auto;
+    width: 920px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: solid 1px #DDD;
+}
+
+/*This is a flex item*/
+#logo
+{
+    width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+    margin-left: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#promo 
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+#promoText 
+{
+    width: 600px;
+}
+
+#promoImage 
+{
+    margin-left: auto;
+    width: 280px;
+    line-height: 2.5;
+}
+
+#productInfo 
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+}
+
+
+.productDesc 
+{
+    width: 200px;
+}
+
+#mainFooter 
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footerNav 
+{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#copyRight 
+{
+    margin-left: auto;
+    margin-top:auto;
+    width: 310px;
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+#content1 
+{
+    width: 440px;
+}
+
+#content2 
+{
+    margin-left: auto;
+    width: 440px;
+}
+
+/*Page 3*/
+
+#productImages 
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productImg 
+{
+    width: 280px;
+}
+
+
+#contentAreaBig
+{
+    margin-top: 40px;
+    border-bottom: solid 1px #DDD;
+    padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height*/
+#contentAreaBig p 
+{
+    line-height: 300px;
+}
+
+#promoImageBig
+{
+    width: 920px;
+}
+
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+    width: 920px;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: rgb(229, 49, 61);
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+    margin-top: 25px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: rgb(66, 62, 62);
+    line-height: 1.2;
+    text-shadow: -1px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: -2px -2px 10px rgba(0,0,0,.25) inset, 2px 2px 10px white inset;
+    -moz-box-shadow: -2px -2px 10px rgba(0,0,0,.25) inset, 2px 2px 10px white inset;
+    box-shadow: -2px -2px 10px rgba(0,0,0,.25) inset, 2px 2px 10px white inset;
+}
+
+.red {
+    color: rgb(66, 62, 62);
+    background-color: rgb(229, 49, 61);
+}
+
+.grey {
+    color: rgb(0, 0, 0);
+    background-color: rgb(66, 62, 62);
+}
+
+.button:hover {
+    -webkit-box-shadow: 2px 2px 10px rgba(0,0,0,.25) inset, -2px -2px 10px white inset;
+    -moz-box-shadow: 2px 2px 10px rgba(0,0,0,.25) inset, -2px -2px 10px white inset;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25) inset, -2px -2px 10px white inset;
+}
+
+/* Home Page */
+
+.controller {
+    height: 130px;
+    margin-bottom:0px;
+}
+
+.title { 
+    text-align: center;
+}
+
+.title strong {
+    font-size: 30px;
+}
+
+.description {
+  font-size: 16px;
+  font-family: "VT323";
+  color: rgb(66, 62, 62);
+  line-height: 1.2;
+}
