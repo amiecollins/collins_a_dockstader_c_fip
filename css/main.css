@@ -126,6 +126,10 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
     justify-content: space-between;
 }
 
+#mainNav a {
+    color: rgb(255, 255, 255);
+}
+
 #promo 
 {
     margin-top: 40px;
@@ -149,7 +153,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
     line-height: 2.5;
 }
 
-#productInfo 
+#homeLinkBoxes 
 {
     margin-top: 40px;
     display: flex;
@@ -160,8 +164,13 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 
-.productDesc 
+.homeLink
 {
+    width: 200px;
+}
+
+.homeLink img {
+    height: 130px;
     width: 200px;
 }
 
@@ -184,9 +193,13 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #copyRight 
 {
-    margin-left: auto;
-    margin-top:auto;
+    margin:auto;
+    padding-top: 30px;
     width: 310px;
+}
+
+#copyRight p {
+    text-align: right;
 }
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
@@ -239,15 +252,11 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
     padding-bottom: 40px;
 }
 
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-    line-height: 300px;
-}
-
 #promoImageBig
 {
     width: 920px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -275,7 +284,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 .red {
-    color: rgb(66, 62, 62);
+    color: rgb(255, 255, 255);
     background-color: rgb(229, 49, 61);
 }
 
@@ -307,7 +316,22 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 .description {
   font-size: 16px;
-  font-family: "VT323";
+  font-family: "VT323", monospace;
   color: rgb(66, 62, 62);
   line-height: 1.2;
+}
+
+#slideshow {
+    position: relative;
+    width: 600px;
+    height: 250px;
+}
+
+#slideshow div {
+    position: absolute;
+}
+
+#sideNote {
+    margin-top:30px;
+    font-family: 'VT323', monospace;
 }

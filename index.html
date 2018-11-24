@@ -5,12 +5,13 @@
 <title>Pixel Perfect Home Page</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<section id="topBar"></section><!--end topBar-->
 	<div id="siteContainer">
     	<header id="mainHeader">
-        	<div id="logo"><p><img src="images/pixelPerfectLogo.svg" alt="Pixel Perfect Logo"></p></div><!--end logo-->
+        	<div id="logo"><p><img src="images/logo.svg" alt="Pixel Perfect Logo"></p></div><!--end logo-->
             <nav id="mainNav"><p>
                 <ul>
                     <li><a href="index.html" class="button red">Home</a></li>
@@ -23,36 +24,41 @@
         </header><!--end mainHeader-->
         <section id="promo">
         	<div id="promoText"><p>
-                <img src="images/pic_1.jpg" alt="a wall of game controllers">
+                <img id="slideshow" src="images/pic1.jpg" alt="a wall of game controllers" />
             </p></div><!--end promoText-->
         	<div id="promoImage"><p>
             <strong>Welcome to Pixel Perfect,</strong><br>
-            a video game appriciation and review website dedicated to celebrating games from all console generations and platforms.
+            a video game appriciation and review website dedicated to celebrating games from all console generations and platforms. We are passionate gamers who want to share our love for the best games of all time.
+            <div id="sideNote">
+            Click to the left to see some of our photos</div>
             </p></div><!--end promoImage-->
         </section><!--end promo-->
-        <section id="productInfo">
-        	<section class="productDesc">
+        <section id="homeLinkBoxes">
+        	<section class="homeLink">
                 <p><a href="about.html">
-                    <img src="images/ps1.jpg" alt="icon of a playstation 1 controller" class="controller">
+                    <img src="images/ps1.svg" alt="icon of a playstation 1 controller" class="controller">
                     <div class="title"><strong>About Us</strong></div>
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla porro corporis numquam veniam nam voluptatibus consequatur alias reiciendis enim.</div>
                 </a></p>
             </section><!--end productDesc1-->
-            <section class="productDesc"><p>
+            <section class="homeLink">
+                <p><a href="reviews.html">
                     <img src="images/xbox.svg" alt="icon of an xbox 1 controller" class="controller">
                     <div class="title"><strong>Reviews</strong></div>
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla porro corporis numquam veniam nam voluptatibus consequatur alias reiciendis enim.</div>
-                </p></section><!--end productDesc2-->
-            <section class="productDesc"><p>
+                </a></p></section><!--end productDesc2-->
+            <section class="homeLink">
+                <p><a href="gallery.html">
                     <img src="images/switch.svg" alt="icon of an nintendo switch" class="controller">
                     <div class="title"><strong>Gallery</strong></div>
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla porro corporis numquam veniam nam voluptatibus consequatur alias reiciendis enim.</div>
-                </p></section><!--end productDesc3-->
-            <section class="productDesc"><p>
+                </a></p></section><!--end productDesc3-->
+            <section class="homeLink">
+                <p><a href="contact.html">
                     <img src="images/nes.svg" alt="icon of an nintendo entertainment system controller" class="controller">
                     <div class="title"><strong>Contact Us</strong></div>
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla porro corporis numquam veniam nam voluptatibus consequatur alias reiciendis enim.</div>
-                </p></section><!--end productDesc4-->
+                </a></p></section><!--end productDesc4-->
         </section><!--end productInfo-->
         <footer id="mainFooter">
         	<nav id="footerNav"><p>
