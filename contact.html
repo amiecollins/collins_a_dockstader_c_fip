@@ -6,11 +6,12 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
-	<div id="siteContainer">
-    	<header id="mainHeader">
-            <div id="logo"><p><a href="index.html"><img src="images/logo.svg" alt="Pixel Perfect Logo"></a></p></div><!--end logo-->
-            <nav id="mainNav"><p>
+    <section id="topBar"><h2 class="hidden">Top header bar</h2></section><!--end topBar-->
+    <div id="siteContainer">
+        <header id="mainHeader">
+            <h1 class="hidden">Welcome to Pixel Perfect</h1>
+            <div id="logo"><a href="index.html"><h2 class="hidden">Logo</h2><img src="images/logo.svg" alt="Pixel Perfect Logo"></a></div><!--end logo-->
+            <nav id="mainNav"><h2 class="hidden">Main navigation</h2>
                 <ul>
                     <li><a href="index.html" class="button red">Home</a></li>
                     <li><a href="about.html" class="button red">About Us</a></li>
@@ -18,16 +19,16 @@
                     <li><a href="gallery.html" class="button red">Gallery</a></li>
                     <li><a href="contact.html" class="button red">Contact Us</a></li>
                 </ul>
-            </p></nav><!--end mainNav-->
+            </nav><!--end mainNav-->
         </header><!--end mainHeader-->
-        <section id="contactImages">
-        	<section class="contactImg"><p><img src="images/squirtle.jpg" alt="Pokemon Squirtle figureine"></p></section><!--end productImg1-->
-            <section class="contactImg"><p><img src="images/zelda.jpg" alt="An original Legend of Zelda cartridge"></p></section><!--end productImg2-->
-            <section class="contactImg"><p><img src="images/pokeballs.jpg" alt="A clear box of pokeballs"></p></section><!--end productImg3-->
+        <section id="contactImages"><h2 class="hidden">Contact Photos</h2>
+        	<div class="contactImg"><img src="images/squirtle.jpg" alt="Pokemon Squirtle figureine"></div><!--end productImg1-->
+            <div class="contactImg"><img src="images/zelda.jpg" alt="An original Legend of Zelda cartridge"></div><!--end productImg2-->
+            <div class="contactImg"><img src="images/pokeballs.jpg" alt="A clear box of pokeballs"></div><!--end productImg3-->
         </section><!--end productImages-->
-        <section id="contactArea">
-        	<p><form action="includes/form.php">
-                <section id="contactForm">
+        <section id="contactArea"><h2 class="hidden">Contact Area</h2>
+            <form action="includes/form.php">
+                <section id="contactForm"><h3 class="hidden">Contact Form</h3>
                         <div id="labelArea"><strong>Contact Us</strong>
                         <label class="lbl" for="name">Name: </label>
                         <label class="lbl" for="email">Email: </label>
@@ -37,22 +38,22 @@
                         <input class="ipt" type="email" id="email" name="Email">
                         <textarea class="ipt" id="content" name="Content"></textarea>
                         <input type="submit" id="submitButton"></div>
-                    
                 </section></form>
-                <section id="contactInfo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <section id="contactInfo"><h3 class="hidden">Contact Information</h3>
+                    This site was created by Amie Collins and Cheyenne Dockstader. If you would like to leave a suggestion on what game to play or review next, contact us here. If you also have questions about this site or anything that you may want to know about video games, we can be contacted here. 
                 </section>
-            </p>
         </section>
         <footer id="mainFooter">
-            <nav id="footerNav"><p>
+            <h1 class="hidden">Footer</h1>
+            <nav id="footerNav"><h2 class="hidden">Footer navigation</h2>
                 <ul>
                     <li><a href="index.html" class="button grey">Home</a></li>
                     <li><a href="about.html" class="button grey">About Us</a></li>
                     <li><a href="reviews.html" class="button grey">Reviews</a></li>
                     <li><a href="gallery.html" class="button grey">Gallery</a></li>
                     <li><a href="contact.html" class="button grey">Contact Us</a></li>
-            </p></nav><!--end FooterNav-->
+                </ul>
+            </nav><!--end FooterNav-->
             <div id="copyRight"><p>&copy; 2018 Pixel Perfect</p></div><!--end Copyright-->
         </footer><!--end mainFooter-->
     </div><!--end siteContainer-->
